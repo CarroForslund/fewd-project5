@@ -1,3 +1,46 @@
+.nav a {
+  display: block;
+  text-decoration: none;
+  color: #808080;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0.9375em;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 1.0625em; }
+
+.nav a:active, .nav a:hover {
+  color: #ffffff;
+  background-color: #58e1c1; }
+
+.nav {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 769px) {
+    .nav {
+      flex-direction: row; } }
+
+.img--logo {
+  display: block;
+  margin: 2em auto; }
+.img--frame {
+  display: block;
+  margin: 0 auto;
+  padding: 1em;
+  border: 0.5px solid #808080;
+  width: 100%; }
+.img--avatar {
+  display: block;
+  margin: 2em auto; }
+
+.nav {
+  justify-content: center; }
+  .nav__item {
+    height: 3.125em;
+    text-align: center;
+    padding: 0; }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -352,5 +395,16 @@ table {
 td,
 th {
   padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+ul {
+  list-style-type: none;
+  padding-left: 0; }
+
+p {
+  font-size: 16px;
+  font-weight: 400; }
 
 /*# sourceMappingURL=styles.css.map */

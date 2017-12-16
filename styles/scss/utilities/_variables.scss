@@ -2,12 +2,23 @@
 // FONTS
 //==============================================================================
 //@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,900');
-$font-url   :  "https://fonts.googleapis.com/css?family=Lato:400,400i,700,900";
-$stack-lato :  "Lato", sans-serif;
 
-$font-weight-regular : 400;
-$font-weight-bold    : 700;
-$font-weight-bolder   : 900;
+// Font stacks
+$font-url--google       :  "https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900";
+$font-family--primary   :  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family--secondary :  "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+//Font Weights
+$font-weight--light   : 300;
+$font-weight--regular : 400;
+$font-weight--bold    : 700;
+$font-weight--bolder  : 900;
+
+//==============================================================================
+// TEXT
+//==============================================================================
+$base__font-size  : 16px;
+$base__line       : 24px;
 
 //==============================================================================
 // BREAKPOINTS
@@ -17,8 +28,10 @@ $breakpoint-medium :   768px;
 $breakpoint-large  :  2040px;
 
 //==============================================================================
-// COLORS                        http://chir.ag/projects/name-that-color
+// COLORS                                http://chir.ag/projects/name-that-color
 //==============================================================================
+$white   :  #ffffff;
+$black   :  #808080;  //grey-ish
 
 $viking  :  #58e1c1;  //aqua green
 $malibu  :  #51ddfc;  //aqua blue
@@ -26,3 +39,24 @@ $emerald :  #63cc82;  //green
 $sunglo  :  #e4757a;  //red
 $coral   :  #fd7856;  //orange
 $purple  :  #927bc1;
+
+//==============================================================================
+// COLOR USAGE
+//==============================================================================
+$color-primary    : $viking;
+$color-secondary  : $malibu;
+
+//==============================================================================
+// BORDERS
+//==============================================================================
+$border--rounded-corners	: 5px;
+// $border--round				    : 50%;
+// $border--theme				    : 8px solid $color-primary;
+
+//==============================================================================
+// GRID
+//==============================================================================
+$grid-column-width         :  65px;
+$grid-gutter-width         :  20px;
+$grid-column-count         :  12;
+$grid-container-max-width  :  1050px;

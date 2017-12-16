@@ -1,0 +1,22 @@
+//==============================================================================
+// LOGO
+//==============================================================================
+.img {
+  @include modifier(logo){		//img--logo
+    display: block;
+    margin: 2em auto;
+	}
+
+  @include modifier(frame){
+    display: block;
+    margin: 0 auto;
+    padding: 1em;
+    border: .5px solid $black;
+    width: 100%;
+  }
+
+  @include modifier(avatar){
+    display: block;
+    margin: 2em auto;
+  }
+}
