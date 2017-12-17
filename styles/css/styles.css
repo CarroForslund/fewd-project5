@@ -66,8 +66,20 @@
 .theme__colors.grid__col--12 {
   background-color: #83e9d1; }
 
+.grid__row {
+  margin: 2.5em 0; }
+
+[class^="grid__col--"] {
+  border-radius: 5px;
+  margin: 0.375em 0;
+  padding: 0.8125em;
+  border: none;
+  color: #808080;
+  display: block;
+  width: 100%; }
+
 .img--logo {
-  margin: 2em auto; }
+  margin: auto; }
 .img--frame {
   margin: 0 auto;
   padding: 1em;

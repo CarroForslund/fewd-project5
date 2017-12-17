@@ -4,7 +4,7 @@
 .img {
   @include modifier(logo){		//img--logo
     @extend %img;
-    margin: 2em auto;
+    margin: auto;
 	}
 
   @include modifier(frame){
