@@ -59,16 +59,26 @@
   display: block;
   margin: 2em auto; }
 
-.btn--default {
-  background-color: #58e1c1; }
-.btn--success {
+.theme__colors.btn--default {
+  background-color: #51ddfc; }
+.theme__colors.btn--success {
   background-color: #63cc82; }
-.btn--error {
+.theme__colors.btn--error {
   background-color: #e4757a; }
-.btn--warning {
+.theme__colors.btn--warning {
   background-color: #fd7856; }
-.btn--info {
+.theme__colors.btn--info {
   background-color: #927bc1; }
+
+[class^="btn--"] {
+  border-radius: 5px;
+  margin: 1.25em 0;
+  padding: 0.8125em;
+  border: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  width: 100%; }
 
 .nav {
   justify-content: center; }

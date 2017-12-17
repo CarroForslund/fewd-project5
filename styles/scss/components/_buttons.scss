@@ -10,6 +10,20 @@
 // .btn--info
 // .theme__colors
 
-.btn {
+//Color buttons when theme__colors class is included
+.theme__colors.btn {
   @include bg-colors($theme-colors);
+}
+
+
+//Select any class with beginning of btn--
+[class^="btn--"] {
+  border-radius: $border--rounded-corners;
+  margin: em(20px) 0;
+ 	padding: em(13px);
+  border: none;
+	text-transform: uppercase;
+  color: $white;
+  display: block;
+  width: 100%
 }
