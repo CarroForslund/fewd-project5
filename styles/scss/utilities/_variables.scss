@@ -40,18 +40,25 @@ $sunglo  :  #e4757a;  //red
 $coral   :  #fd7856;  //orange
 $purple  :  #927bc1;
 
-//==============================================================================
-// COLOR USAGE
-//==============================================================================
+//Color usage
 $color-primary    : $viking;
 $color-secondary  : $malibu;
+
+//UI Colors
+$theme-colors: (
+  default : $viking,
+  success : $emerald,
+  error   : $sunglo,
+  warning : $coral,
+  info    : $purple
+);
+
 
 //==============================================================================
 // BORDERS
 //==============================================================================
 $border--rounded-corners	: 5px;
 // $border--round				    : 50%;
-// $border--theme				    : 8px solid $color-primary;
 
 //==============================================================================
 // GRID

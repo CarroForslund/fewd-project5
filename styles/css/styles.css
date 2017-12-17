@@ -34,12 +34,42 @@
   display: block;
   margin: 2em auto; }
 
+.btn--default {
+  background-color: #58e1c1; }
+.btn--success {
+  background-color: #63cc82; }
+.btn--error {
+  background-color: #e4757a; }
+.btn--warning {
+  background-color: #fd7856; }
+.btn--info {
+  background-color: #927bc1; }
+
 .nav {
   justify-content: center; }
   .nav__item {
     height: 3.125em;
     text-align: center;
     padding: 0; }
+
+.form__input {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: solid 5px #58e1c1;
+  padding: 0.625em;
+  margin: 1.25em 0;
+  display: block;
+  width: 100%; }
+.form__label--hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
