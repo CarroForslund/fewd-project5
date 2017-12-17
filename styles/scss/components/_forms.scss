@@ -4,6 +4,8 @@
 
 .form {
 
+  justify-content: center;
+
   @include element(input){      //form__input
     border-top: 0;
     border-right:0;

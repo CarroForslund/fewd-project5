@@ -6,7 +6,7 @@
   };
 }
 
-//Add grid colors to elements with class grid__col--X and theme__colors
+//All elements with class grid__col--X and theme__colors
 .theme__colors.grid{
   &__col{
     @include bg-colors($grid-colors);
@@ -25,12 +25,16 @@
 //Select any class with beginning of grid__col--
 [class^="grid__col--"] {
   border-radius: $border--rounded-corners;
-  margin: em(6px) 0;
+  margin: em(6px) 2%;
  	padding: em(13px);
   border: none;
   color: $black;
   display: block;
-  width: 100%
+  width: 100%;
+  @include mediaquery(medium){
+    // text-align: center;
+    @include flex-container(center);
+  }
 }
 
 //Calculate grid column sizes for bigger screens
@@ -46,5 +50,8 @@
 }
 
 .centered{
-  margin: auto;
+  @include mediaquery(medium){
+    margin: auto;
+    flex-grow: 0;
+  }
 }

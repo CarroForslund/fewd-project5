@@ -6,7 +6,8 @@
     text-decoration: underline; }
 
 .img--logo, .img--frame, .img--avatar {
-  display: block; }
+  display: block;
+  align-self: center; }
 
 .headline--primary {
   color: #58e1c1;
@@ -79,12 +80,20 @@
 
 [class^="grid__col--"] {
   border-radius: 5px;
-  margin: 0.375em 0;
+  margin: 0.375em 2%;
   padding: 0.8125em;
   border: none;
   color: #808080;
   display: block;
   width: 100%; }
+  @media (min-width: 769px) {
+    [class^="grid__col--"] {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
+  @media (min-width: 769px) and (min-width: 769px) {
+    [class^="grid__col--"] {
+      flex-direction: row; } }
 
 @media (min-width: 769px) {
   .grid__col--1 {
@@ -119,19 +128,22 @@
 
   .grid__col--11 {
     width: 91.3043478261%; } }
-.centered {
-  margin: auto; }
+@media (min-width: 769px) {
+  .centered {
+    margin: auto;
+    flex-grow: 0; } }
 
 .img--logo {
   margin: auto; }
 .img--frame {
   color: #808080;
-  margin: 0 auto;
+  margin: 2em auto;
   padding: .8em;
   border: 1px solid #808080;
   width: 100%; }
 .img--avatar {
-  margin: 2em auto; }
+  margin: 2em auto;
+  border-radius: 50%; }
 
 .theme__colors.btn--default {
   background-color: #51ddfc; }
@@ -146,12 +158,25 @@
 
 [class^="btn--"] {
   border-radius: 5px;
-  margin: 1.25em 0;
+  margin: 1.125em 0;
   padding: 0.8125em;
   border: none;
   text-transform: uppercase;
   color: #ffffff;
-  display: block;
+  width: 100%; }
+  @media (min-width: 769px) {
+    [class^="btn--"] {
+      width: auto;
+      margin: 0 1em;
+      padding-left: 1.2em;
+      padding-right: 1.2em; } }
+  @media (min-width: 2040px) {
+    [class^="btn--"] {
+      padding-left: 3.5em;
+      padding-right: 3.5em; } }
+
+button[type=submit] {
+  margin: 0;
   width: 100%; }
 
 .blockquote {
@@ -177,24 +202,26 @@
     text-align: center;
     padding: 0; }
 
-.form__input {
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-  border-bottom: solid 5px #58e1c1;
-  padding: 0.625em;
-  margin: 1.25em auto;
-  display: block;
-  width: 95%; }
-.form__label--hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
+.form {
+  justify-content: center; }
+  .form__input {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: solid 5px #58e1c1;
+    padding: 0.625em;
+    margin: 1.25em auto;
+    display: block;
+    width: 95%; }
+  .form__label--hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**

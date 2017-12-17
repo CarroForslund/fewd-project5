@@ -30,7 +30,9 @@
 	flex-direction: column;
   justify-content: $justify-content;
   @include mediaquery(medium) {
+    // display: wrap;
     flex-direction: row;
+    // flex-grow: 1;
   }
 }
 

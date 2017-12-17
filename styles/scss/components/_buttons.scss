@@ -2,28 +2,36 @@
 // BUTTONS
 //==============================================================================
 
-// Buttons:
-// .btn--default
-// .btn--success
-// .btn--error
-// .btn--warning
-// .btn--info
-// .theme__colors
-
 //Color buttons when theme__colors class is included
 .theme__colors.btn {
   @include bg-colors($theme-colors);
 }
 
-
 //Select any class with beginning of btn--
 [class^="btn--"] {
   border-radius: $border--rounded-corners;
-  margin: em(20px) 0;
+  margin: em(18px) 0;
  	padding: em(13px);
   border: none;
 	text-transform: uppercase;
   color: $white;
-  display: block;
-  width: 100%
+  width: 100%;
+
+  @include mediaquery(medium){
+    width: auto;
+    margin: 0 1em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    // flex-grow: 1;
+  }
+
+  @include mediaquery(large){
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+  }
+}
+
+button[type=submit]{
+  margin: 0;
+  width: 100%;
 }

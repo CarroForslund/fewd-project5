@@ -10,7 +10,7 @@
   @include modifier(frame){
     @extend %img;
     color: $black;
-    margin: 0 auto;
+    margin: 2em auto;
     padding: .8em;
     border: 1px solid $black;
     width: 100%;
@@ -19,5 +19,6 @@
   @include modifier(avatar){
     @extend %img;
     margin: 2em auto;
+    border-radius: 50%;
   }
 }
