@@ -41,6 +41,9 @@
     .nav {
       flex-direction: row; } }
 
+.container {
+  padding: 1.875em; }
+
 .theme__colors.grid__col--1 {
   background-color: #fc5024; }
 .theme__colors.grid__col--2 {
@@ -81,9 +84,10 @@
 .img--logo {
   margin: auto; }
 .img--frame {
+  color: #808080;
   margin: 0 auto;
-  padding: 1em;
-  border: 0.5px solid #808080;
+  padding: .8em;
+  border: 1px solid #808080;
   width: 100%; }
 .img--avatar {
   margin: 2em auto; }

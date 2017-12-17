@@ -9,9 +9,10 @@
 
   @include modifier(frame){
     @extend %img;
+    color: $black;
     margin: 0 auto;
-    padding: 1em;
-    border: .5px solid $black;
+    padding: .8em;
+    border: 1px solid $black;
     width: 100%;
   }
 

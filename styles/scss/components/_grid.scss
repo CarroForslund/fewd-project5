@@ -1,21 +1,6 @@
-// List of classes used
-//
-// Grid:
-// .container
-// .grid__row
-// .grid__col--2
-// .grid__col--3
-// .grid__col--4
-// .grid__col--5
-// .grid__col--6
-// .grid__col--7
-// .grid__col--8
-// .grid__col--9
-// .grid__col--10
-// .grid__col--11
-// .grid__col--12
-// .centered
-// .theme__colors
+.container{
+  padding: em(30px);
+}
 
 //Add grid colors to elements with class grid__col--X and theme__colors
 .theme__colors.grid{
