@@ -46,12 +46,25 @@
 }
 
 //==============================================================================
-// THEMES
+// THEMES and COLORS
 //==============================================================================
+
+//Background colors
 @mixin bg-colors($map){
   @each $theme, $color in $map {
     &--#{$theme}{
       background-color: $color;
     }
+  }
+}
+
+//Grid background colors
+@mixin grid-colors($map) {
+	$i : 1;
+	@each $color in $map {
+		@include element("col--#{$i}") {
+      background-color: $color;
+    }
+  	$i : $i + 1;
   }
 }

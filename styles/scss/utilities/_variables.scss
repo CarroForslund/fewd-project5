@@ -30,6 +30,8 @@ $breakpoint-large  :  2040px;
 //==============================================================================
 // COLORS                                http://chir.ag/projects/name-that-color
 //==============================================================================
+
+//Normal colors
 $white   :  #ffffff;
 $black   :  #808080;  //grey-ish
 
@@ -40,9 +42,25 @@ $sunglo  :  #e4757a;  //red
 $coral   :  #fd7856;  //orange
 $purple  :  #927bc1;
 
+//Lighter colors
+$viking-light : lighten($viking, 10%);
+$malibu-light : lighten($malibu, 10%);
+$emerald-light: lighten($emerald, 10%);
+$sunglo-light : lighten($sunglo, 10%);
+$coral-light  : lighten($coral, 10%);
+$purple-light : lighten($purple, 10%);
+
+//Darker colors
+$viking-dark  : darken($viking, 10%);
+$malibu-dark  : darken($malibu, 10%);
+$emerald-dark : darken($emerald, 10%);
+$sunglo-dark  : darken($sunglo, 10%);
+$coral-dark   : darken($coral, 10%);
+$purple-dark  : darken($purple, 10%);
+
 //Color usage
-$color-primary    : $viking;
-$color-secondary  : $malibu;
+$color-primary      : $viking;
+$color-secondary    : $malibu;
 
 //UI Colors
 $theme-colors: (
@@ -51,6 +69,21 @@ $theme-colors: (
   error   : $sunglo,
   warning : $coral,
   info    : $purple
+);
+
+$grid-colors: (
+  1  :  $coral-dark,
+  2  :  $viking-dark,
+  3  :  $purple-light,  //displayed
+  4  :  $malibu-light,  //displayed
+  5  :  $emerald-light, //displayed
+  6  :  $malibu-dark,   //displayed
+  7  :  $sunglo-light,  //displayed
+  8  :  $coral-light,    //displayed
+  9  :  $emerald-dark,
+  10 :  $sunglo-dark,
+  11 :  $purple-dark,
+  12 :  $viking-light,  //displayed
 );
 
 

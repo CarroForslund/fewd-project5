@@ -21,6 +21,31 @@
     .nav {
       flex-direction: row; } }
 
+.theme__colors.grid__col--1 {
+  background-color: #fc5024; }
+.theme__colors.grid__col--2 {
+  background-color: #2dd9b1; }
+.theme__colors.grid__col--3 {
+  background-color: #af9ed1; }
+.theme__colors.grid__col--4 {
+  background-color: #83e7fd; }
+.theme__colors.grid__col--5 {
+  background-color: #89d9a1; }
+.theme__colors.grid__col--6 {
+  background-color: #1fd3fb; }
+.theme__colors.grid__col--7 {
+  background-color: #eca0a3; }
+.theme__colors.grid__col--8 {
+  background-color: #fea088; }
+.theme__colors.grid__col--9 {
+  background-color: #3ebe64; }
+.theme__colors.grid__col--10 {
+  background-color: #dc4a51; }
+.theme__colors.grid__col--11 {
+  background-color: #7558b1; }
+.theme__colors.grid__col--12 {
+  background-color: #83e9d1; }
+
 .img--logo {
   display: block;
   margin: 2em auto; }

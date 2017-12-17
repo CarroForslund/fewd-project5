@@ -16,3 +16,10 @@
 // .grid__col--12
 // .centered
 // .theme__colors
+
+//Add grid colors to elements with class grid__col--X and theme__colors
+.theme__colors.grid{
+  &__col{
+    @include bg-colors($grid-colors);
+  }
+}
