@@ -3,12 +3,12 @@
 //==============================================================================
 .img {
   @include modifier(logo){		//img--logo
-    display: block;
+    @extend %img;
     margin: 2em auto;
 	}
 
   @include modifier(frame){
-    display: block;
+    @extend %img;
     margin: 0 auto;
     padding: 1em;
     border: .5px solid $black;
@@ -16,7 +16,7 @@
   }
 
   @include modifier(avatar){
-    display: block;
+    @extend %img;
     margin: 2em auto;
   }
 }

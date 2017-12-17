@@ -14,6 +14,9 @@ ul {
 }
 
 p {
+	color: $black;
+	font-family: $font-family--primary;
 	font-size: $base__font-size;
-	font-weight: $font-weight--regular;
+	font-weight: $font-weight--light;
+	line-height: em(24px);
 }

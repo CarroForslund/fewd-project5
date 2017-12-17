@@ -1,0 +1,26 @@
+.headline {
+  &--primary{
+    @extend %headline-primary;
+  }
+
+  &--secondary{
+    @extend %headline-secondary;
+  }
+}
+
+.blockquote {
+  color: $black;
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: $font-weight--light;
+  line-height: em(20px);
+  margin-left: em(20px);
+  padding-left: em(10px);
+  border-left: solid 10px $color-primary;
+  border-radius: $border--rounded-corners;
+}
+
+//Links
+.link {
+  @extend %link;
+}

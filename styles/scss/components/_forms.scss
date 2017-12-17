@@ -10,9 +10,9 @@
     border-left: 0;
     border-bottom: solid 5px $color-primary;
     padding: em(10px);
-    margin: em(20px) 0;
+    margin: em(20px) auto;
     display: block;
-    width: 100%;
+    width: 95%;
   }
 
   @include element(label){	     //form__label
