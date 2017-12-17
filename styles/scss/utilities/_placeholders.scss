@@ -52,15 +52,3 @@
   color: $white;
   background-color: $color-primary;
 }
-
-//==============================================================================
-// FLEXBOX
-//==============================================================================
-
-%container-flex {
-	display: flex;
-	flex-direction: column;
-  @include mediaquery(medium) {
-		flex-direction: row;
-	}
-}

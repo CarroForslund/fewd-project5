@@ -1,7 +1,7 @@
 //==============================================================================
 // MEDIA QUERIES                                     Call/use mixins by @include
 //==============================================================================
-@mixin mediaquery ($breakpoint){
+@mixin mediaquery($breakpoint){
   @if $breakpoint == "small"{
     @media (min-width: $breakpoint-small) and (max-width: $breakpoint-medium){
       @content;
@@ -18,7 +18,7 @@
     }
   }
   @else {
-    @error "Whoops! No value could be retrieved for `#{$breakpoint}`.";
+    @error "Whoops! No value could be retrieved for '#{$breakpoint}'.";
   }
 }
 
@@ -26,8 +26,12 @@
 // FLEXBOX SETTINGS
 //==============================================================================
 @mixin flex-container($justify-content) {
-  @extend %container-flex;
+  display: flex;
+	flex-direction: column;
   justify-content: $justify-content;
+  @include mediaquery(medium) {
+    flex-direction: row;
+  }
 }
 
 //==============================================================================
@@ -55,16 +59,5 @@
     &--#{$theme}{
       background-color: $color;
     }
-  }
-}
-
-//Grid background colors
-@mixin grid-colors($map) {
-	$i : 1;
-	@each $color in $map {
-		@include element("col--#{$i}") {
-      background-color: $color;
-    }
-  	$i : $i + 1;
   }
 }
