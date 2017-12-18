@@ -29,7 +29,8 @@
   padding: 0.9375em;
   border-radius: 5px;
   font-weight: 300;
-  font-size: 1.0625em; }
+  font-size: 1.0625em;
+  transition-duration: .12s; }
 
 .nav a:active, .nav a:hover {
   color: #ffffff;
@@ -146,15 +147,30 @@
   border-radius: 50%; }
 
 .theme__colors.btn--default {
-  background-color: #51ddfc; }
+  background-color: #51ddfc;
+  transition-duration: .2s; }
+  .theme__colors.btn--default:hover {
+    background-color: #1fd3fb; }
 .theme__colors.btn--success {
-  background-color: #63cc82; }
+  background-color: #63cc82;
+  transition-duration: .2s; }
+  .theme__colors.btn--success:hover {
+    background-color: #3ebe64; }
 .theme__colors.btn--error {
-  background-color: #e4757a; }
+  background-color: #e4757a;
+  transition-duration: .2s; }
+  .theme__colors.btn--error:hover {
+    background-color: #dc4a51; }
 .theme__colors.btn--warning {
-  background-color: #fd7856; }
+  background-color: #fd7856;
+  transition-duration: .2s; }
+  .theme__colors.btn--warning:hover {
+    background-color: #fc5024; }
 .theme__colors.btn--info {
-  background-color: #927bc1; }
+  background-color: #927bc1;
+  transition-duration: .2s; }
+  .theme__colors.btn--info:hover {
+    background-color: #7558b1; }
 
 [class^="btn--"] {
   border-radius: 5px;

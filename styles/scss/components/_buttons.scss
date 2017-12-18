@@ -4,7 +4,7 @@
 
 //Color buttons when theme__colors class is included
 .theme__colors.btn {
-  @include bg-colors($theme-colors);
+  @include button-bg-colors($theme-colors);
 }
 
 //Select any class with beginning of btn--
@@ -16,6 +16,7 @@
 	text-transform: uppercase;
   color: $white;
   width: 100%;
+
 
   @include mediaquery(medium){
     width: auto;

@@ -47,6 +47,7 @@
   border-radius: $border--rounded-corners;
   font-weight: 300;
   font-size: em(17px);
+  transition-duration: .12s;
 }
 
 %nav-item-on {

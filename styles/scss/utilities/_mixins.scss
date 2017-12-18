@@ -55,11 +55,24 @@
 // THEMES and COLORS
 //==============================================================================
 
-//Background colors
+//General background colors
 @mixin bg-colors($map){
   @each $theme, $color in $map {
     &--#{$theme}{
       background-color: $color;
+    }
+  }
+}
+
+//Background colors buttons
+@mixin button-bg-colors($map){
+  @each $theme, $color in $map {
+    &--#{$theme}{
+      background-color: $color;
+      transition-duration: .2s;
+      &:hover{
+        background-color: darken($color, 10%);
+      }
     }
   }
 }
